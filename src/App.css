@@ -1,0 +1,89 @@
+/* Reset some default browser styles */
+body, div, h1, p, ul, li, button, input {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Apply some global styles to the entire app */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Style the main app container */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8f8f8; /* Light gray background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight box shadow */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+}
+
+/* Style the input field for adding to-do items, Sign Up, and Login */
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 5px; /* Slightly rounded input */
+}
+
+/* Style the "Add" button for to-do items */
+button, .signup-button, .login-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0074d9; /* Blue button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px; /* Slightly rounded button */
+}
+
+button:hover, .signup-button:hover, .login-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style the to-do list and Login/Sign Up forms */
+ul, .login-container, .signup-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 300px; /* Adjust as needed */
+  text-align: center;
+}
+
+/* Style each to-do item, Login, and Sign Up containers */
+li, .login-container, .signup-container {
+  background-color: #fff;
+  border: 1px solid #ddd; /* Light gray border */
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px; /* Slightly rounded items/containers */
+}
+
+/* Style the "Remove" button for to-do items */
+li button {
+  background-color: #ff4136; /* Red button for removing */
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px; /* Slightly rounded button */
+}
+
+li button:hover {
+  background-color: #d60c0c; /* Darker red on hover */
+}
+
+/* Additional styles specific to Sign Up and Login components can be added below */
